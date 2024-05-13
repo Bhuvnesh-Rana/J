@@ -8,7 +8,7 @@ public class JavaArrays {
 
         //problem 1 sort numeric and alphabetic array..
         int []a={10,30,80,20,60,50};
-        Arrays.sort(a);
+        // Arrays.sort(a);
         for (int i : a) {
             System.out.print(i+" ");
         }
@@ -63,8 +63,28 @@ public class JavaArrays {
         System.out.println(Arrays.toString(a));
 
         //problem 8 copy an array by uterating it.
+        int []b=new int[6];
+        for(int i=0;i<a.length;i++)
+            b[i]=a[i];
+        System.out.println(Arrays.toString(b));
 
+        //problem 9 insert element at a specific position.      ???????????
+        int pos=1;
+        int val=11;
+        for(int i=a.length-1;i<pos;i--){
+            a[i]=a[i-1];
+        }
+        a[pos]=val;
+        System.out.println(Arrays.toString(a)+"ckjn");
 
+        //problem 10 find max and min value in array.
+        int max=a[0];
+        for(int i=0;i<a.length;i++){
+            if (a[i]>max) {
+                max=a[i];
+            }
+        }
+        System.out.println("Maximum no. is: "+max);
 
     }
 }
