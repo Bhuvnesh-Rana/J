@@ -94,10 +94,10 @@ public class JavaArrays {
         }
         System.out.println(Arrays.toString(a));
 
-        //problem 12 find duplicate elements in an array.////check???????????????????/
+        //problem 12 find duplicate elements in an array.
         int bb [] = {1,2,4,2,6,3,7};
         for(int i=0;i<bb.length-1;i++){
-            for(int j=0;j<bb.length;j++){
+            for(int j=i+1;j<bb.length;j++){
                 if (bb[i]==bb[j] && i!=j){
                     System.out.println("duplicate element found."+bb[i]);
                 }
