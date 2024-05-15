@@ -105,5 +105,18 @@ public class JavaArrays {
            
         }
 
+        //problem 13 find dulplicate elements in an String array.
+
+
+        //problem 14 find common elements in two string arrays.
+
+
+        //problem 15 find commmon elements in two arrays.
+
+
+        //problem 16 remove duplicate leements from an array.
+
+        
+
     }
 }
