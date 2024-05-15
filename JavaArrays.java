@@ -99,16 +99,32 @@ public class JavaArrays {
         for(int i=0;i<bb.length-1;i++){
             for(int j=i+1;j<bb.length;j++){
                 if (bb[i]==bb[j] && i!=j){
-                    System.out.println("duplicate element found."+bb[i]);
+                    System.out.println("duplicate element found: "+bb[i]);
                 }
             }
            
         }
 
         //problem 13 find dulplicate elements in an String array.
-
+        String cc[]={"abc","def","ghi","def","abc"};
+        for(int i=0;i<cc.length-1;i++){
+            for(int j=i+1;j<cc.length;j++){
+                if((cc[i].equals(cc[j])) && (i!=j)){
+                    System.out.println("duplicate element found: "+cc[i]);
+                }
+            }
+        }
 
         //problem 14 find common elements in two string arrays.
+        String cc1[]={"xyz","abc","nppm"};
+        for(int i=0;i<cc.length;i++){
+            for(int j=i;j<cc1.length;j++){
+                if (cc[i].equals(cc1[j])) {
+                    System.out.println("same elemesnts found: "+cc[i]);
+                }
+            }
+          
+        }
 
 
         //problem 15 find commmon elements in two arrays.
