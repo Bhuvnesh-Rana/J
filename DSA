@@ -1,0 +1,9 @@
+.Data Structures can be defined as a way to store and organize data so that it can be used efficiently. 
+.It is easier to search for a particular data if it is organized in a proper format.
+.Data Structures help a program to minimize the usage of resources such as memory and space.
+
+Data structures can also be categorized as linear and non-linear. 
+. A linear data structure is the one in which elements are arranged in a sequential manner and each element is connected to its previous and
+next element. 
+. A non-linear data structure is the one in which elements are not arranged in a sequential manner and each element is connected to other
+elements through multiple paths.
