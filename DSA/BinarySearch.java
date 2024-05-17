@@ -1,5 +1,5 @@
 public class BinarySearch {
-    public static void main(String[] args) {
+    public static void main(String[] args) {        //BINARY SEARCH WORKS ON SORTED ARRAY.
         int a[]={1,3,6,8,10};
         int target = 3;
         int result = binarySearch(a,target);
