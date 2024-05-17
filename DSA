@@ -1,9 +1,23 @@
 .Data Structures can be defined as a way to store and organize data so that it can be used efficiently. 
 .It is easier to search for a particular data if it is organized in a proper format.
 .Data Structures help a program to minimize the usage of resources such as memory and space.
+.Code should be optimised i.e no. of steps involved in completing an operation should be minimum.
 
 Data structures can also be categorized as linear and non-linear. 
 . A linear data structure is the one in which elements are arranged in a sequential manner and each element is connected to its previous and
 next element. 
 . A non-linear data structure is the one in which elements are not arranged in a sequential manner and each element is connected to other
 elements through multiple paths.
+
+*Array and linked list can be used to impliment stack and queue.
+*Array limitations:
+. array can have data of similar type,heterogenous elements cannot be stored in an array.
+. array has fixed size, once declared size cannot be changed./ very difficult to change.
+. operations(insertion/delet)done on an array are expensive in terms of memory as they require shifting of data and may lead to loss of data.
+. The elements of an array are stored in continuous memory locations. If the required number of blocks are not present together in the memory,
+  then the array will not be created. 
+* If no. of data entries are not known then instead of using arrays, use other DS like linked list etc. depending upon the use case.
+
+TIME COMPLEXITY:-> Measure of how the running time of an algorithm increases with the size of the input data.
+. Linear Search -> O(n) ->n - no. of elements
+. Binary Search -> O(log n)
