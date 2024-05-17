@@ -4,10 +4,12 @@
 
 . platform indipendent - run application on any machine irrespective of h/w or OS but machine must have jvm.
 			app is indipendent but jvm is dependent every os has its own jvm.
+			jvm looks for the main method to start the execution.(execution starts from the main method.)
+. Programmer writes Java code(Source code .java file), which is compiled(using javac compiler) to Byte code(.class file) which is understood by the JVM.
 
 
 . h/w->os->jdk(->jre(->jvm))
-. code will run on jvm, jre has lib req to run the code.
+. code will run on jvm, jre has required libs to run the code.(inbuilt libs classes used in the code.) also validate the byte code, class loader.
 . Compile code with jdk and run on jvm. jre has necessary lib,fles, class req to run byte code
 
 . The Just-In-Time (JIT) compiler is a component of the runtime environment that improves the performance of Java applications     by compiling bytecodes to native machine code at run time.
@@ -45,10 +47,10 @@ Arrays
 . multidimetional array is array of arrays. int a[][] = new int[3][4]; to assign random values a[i][j] = (int)(Math.random()*10);
 . 2 for loops 1 for row and other for column.
 . enhanced for loop. no need of array length. for(int n[]:a){for(int m:n){syso(m);}sysoln(" ");}  
-. jagged array int a[][] = new int[3][];
-		a[0]=new int[3]; defining column size.
-		a[1]=new int[2];
-		a[2]=new int[4];
+. jagged array int a[][] = new int[3][];				for(int i=0;i<a.length;i++){		FOR JAGGED ARRAY.
+		a[0]=new int[3]; defining column size.				for(int j=0;j<a[i].length;j++{
+		a[1]=new int[2];							Syso(a[i][j]);}
+		a[2]=new int[4];						Sysoln("");}
 . drawback size fixed, will traverse the array to find element time consuming.
 . Array of objects. Student stud[] = new Student[3];			Student s1=new Student();
 			stud[0]=s1(ref var of Student)			s1.rollno=3;
