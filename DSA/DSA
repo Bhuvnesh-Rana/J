@@ -19,5 +19,8 @@ elements through multiple paths.
 * If no. of data entries are not known then instead of using arrays, use other DS like linked list etc. depending upon the use case.
 
 TIME COMPLEXITY:-> Measure of how the running time of an algorithm increases with the size of the input data.
-. Linear Search -> O(n) ->n - no. of elements
-. Binary Search -> O(log n)
+
+. Linear Search -> O(n) ->n - no. of elements best case O(1)-if element is found in first index.
+. Binary Search -> O(log n) - better than linear.
+. Bubble Sort -> O(n^2) swapping done in inner loop, so no. of iterations more.
+. Selection sort ->O(n^2) swapping done in outer loop, so better than bubble sort.
