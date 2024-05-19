@@ -145,6 +145,14 @@ public class JavaArrays {
 
 
         //problem 16 remove duplicate elements from an array.
+
+        //problem 17 find second largest no.
+        Arrays.sort(nums);
+        System.out.println("Second largest no. is: "+nums[nums.length-2]);
+
+        //problem 18 find second smallest no.
+        System.out.println("Second smallest no. is: "+nums[1]);
+        
         
         
 
