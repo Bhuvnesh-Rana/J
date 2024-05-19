@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class JavaArrays {
 
@@ -128,10 +130,22 @@ public class JavaArrays {
 
 
         //problem 15 find commmon elements in two arrays.
+        int nums[]={4,2,1,5,3,9};
+        int nums1[]={6,8,4,2,19,9};
+        List<Integer> common = new ArrayList<>();
+
+        for(int i=0;i<nums.length;i++){
+            for(int j=0;j<nums1.length;j++){
+                if (nums[i]==nums1[j]) {
+                    common.add(nums[i]);
+                }
+            }
+        }
+        System.out.println("Common elements are: "+common);
 
 
-        //problem 16 remove duplicate leements from an array.
-
+        //problem 16 remove duplicate elements from an array.
+        
         
 
     }
