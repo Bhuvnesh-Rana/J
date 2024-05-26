@@ -1,5 +1,9 @@
+. Programming languages -> 1. Functional 2.Procedural 3.OOP
+. Static and Dynamic languages.
+. java works on unicode languages supports every regional language.
 . instance var,obj-- in heap memory, local var,ref var-- in stack memory.
 . var in stack memory and each obj in heap memory with address. memory in jvm. main stack, new mthd dd- dd stack memory.
+. 
 
 
 . platform indipendent - run application on any machine irrespective of h/w or OS but machine must have jvm.
@@ -91,7 +95,7 @@ StringBuilder sb
 . sb.toString
 
 
-Static		//no need to create obj of class to use the static variable, can be called using classname
+Static		//no need to create obj of class to use the static variable, can be called using classname psvm()
 . static variable makes the variable common to all the objs i.e static var is shared by all the objs.
 . static var/mthd should be called with the class names instead of the objs.
 . dont need object of class to call static mthd.
