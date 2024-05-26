@@ -25,6 +25,8 @@
 . var is a reserved type name, detects variable data type automatically.
 
 . java is strongly typed lang.
+. In java there is no pass by referance, there is only pass by value.
+. Shadowing in java.
 
 . Enhanced for loop for arrays.
 
@@ -35,7 +37,8 @@
   default -> accessible in the same package.//i.e acc in same class, package subclass, package non-subclass.
   protected -> acc in same package and subclass of diff package.// acc in same class, package subclass, package non-subclass, diff package subclass.
 
-.class public, instance var private, mthd public. rest requirement based. avoid default.
+. class public, instance var private, mthd public. rest requirement based. avoid default.
+. varargs ambiguity while mthd overloading. //compiler cannot decide which mthd to call.
 
 Method overloading
 . same mthd name different parameters. either parameter length or type should be different. 
