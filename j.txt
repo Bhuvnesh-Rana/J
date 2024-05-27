@@ -27,6 +27,7 @@
 . java is strongly typed lang.
 . In java there is no pass by referance, there is only pass by value.
 . Shadowing in java.
+. Declaration at compile time and initilisation at run time(i.e obj in heap) int a(at compile time)=10;(at run time) -> Dynamic memory allocation.
 
 . Enhanced for loop for arrays.
 
@@ -48,6 +49,7 @@ Stack and heap memory in jvm
 . every mthd has its own stack.
 
 
+* Array objects are in heap and heap objects are not continuous due to dynamic memory allocation. So in java it is not compulsory always that memory allocation done in continuous sequence it is depend on J.V.M.
 
 Arrays
 . arrays are objects, can hold multiple values of same data type. int a[]={1,2,3}; or int a[] = new int[3]; a[0]=1;
@@ -61,6 +63,7 @@ Arrays
 . drawback size fixed, will traverse the array to find element time consuming.
 . Array of objects. Student stud[] = new Student[3];			Student s1=new Student();
 			stud[0]=s1(ref var of Student)			s1.rollno=3;
+. In ArrayList initially size is fixed but when limit reaches, it copies the elements to new list with increased size and deletes the prev. list.
 
 
 == vs .equals.
