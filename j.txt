@@ -89,7 +89,8 @@ String s
 .valueOf  int to string.
 . Strings are immutable, string constant pool
 String, buffer, builder.
-StringBuffer is threat safe and StringBuilder is not.
+. StringBuffer is a class in Java that represents a mutable sequence of characters. It provides an alternative to the immutable String class, allowing you to modify the contents of a string without creating a new object every time.
+StringBuffer is thread safe and StringBuilder is not.
 
 StringBuilder sb
 . sb.charAt
