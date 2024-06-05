@@ -54,7 +54,7 @@ Stack and heap memory in jvm
 
 * Array objects are in heap and heap objects are not continuous due to dynamic memory allocation. So in java it is not compulsory always that memory allocation done in continuous sequence it is depend on J.V.M.
 
-Arrays
+Arrays								  datatype ref.var.=object;
 . arrays are objects, can hold multiple values of same data type. int a[]={1,2,3}; or int a[] = new int[3]; a[0]=1;
 . multidimetional array is array of arrays. int a[][] = new int[3][4]; to assign random values a[i][j] = (int)(Math.random()*10);
 . 2 for loops 1 for row and other for column.
@@ -68,18 +68,27 @@ Arrays
 			stud[0]=s1(ref var of Student)			s1.rollno=3;
 . In ArrayList initially size is fixed but when limit reaches, it copies the elements to new list with increased size and deletes the prev. list.
 
+** Command line arguments in java  (String[] args);
 
-== vs .equals.
+== vs .equals. (== is a comparator)
 . == operator to check memory location or address of two objects are the same or not.
 . == checks if both objects point to the same memory location whereas .equals() evaluates to the comparison of values in the objects.
 
-
-String is a class in java. String s=new String("abc"); syso(s);
-String has different mthds s.charAt,
-If 2 strings have same content they get same address in string constant pool. strings are immutable if we change something
-in the existing string it creates new constant.
+String									   Datatype  ref.var. = object;		|  b |	--------(---	)    point to same object in string
+. String is a class in java. String s=new String("abc"); syso(s);		* String a = "Rana";		|  a | ---------( "Rana")    pool in heap memory.	
+. String has different mthds s.charAt,						* String b = "Rana"		|____|		(	)
+														stack		   heap
+. If 2 strings have same content(value) they get same address in string constant pool. strings are immutable. 			
+. String pool is separate memory structure in the heap memory(created for optimisation) if n no. of ref var have same value, they point to one obj.
+. If we change something in the existing string, it creates new constant.
+. Can create diffrent string objects with same value using 'new' explicitly. The object will be created in the heap memory outside string pool.
 e.g.    String a="ab"; address 101  constant, immutable
 	a=a+"cd";	address 102
+Syso()		println -> is of type printStream -> has mthd valueOf -> which uses toString.	****//CHECK.
+ . pretty printing in java using printf.
+eg :- System.out.prinf("My name is %s and i am %s", "Abcd", "happy."); output -> My name is Abcd and iam happy. 	//format specifier.
+. if printing an object it will call toString().
+. + operator works for primitives and in an expression atleat in eshould be an string (new ArrayList<>() + "" + new Integer(21)) output -> []21  //without string("") error.
 
 String s
 . s.split(regex) -split in array- if regex =" " , split after every space.
