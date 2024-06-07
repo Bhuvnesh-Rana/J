@@ -1,4 +1,4 @@
-# J
+## J
 . Programming languages -> 1. Functional 2.Procedural 3.OOP
 . Static and Dynamic typed languages.
 . In Static Typing, type checking is performed during compile time. It means that the type of a variable is known at compile time.(java,C,C++)
@@ -52,7 +52,39 @@ Stack and heap memory in jvm
 . every mthd has its own stack.
 
 
+* SOLID Principles Java
+. In Java, SOLID principles are an object-oriented approach that are applied to software structure design.  It also ensures that the software is modular, easy to 
+  understand, debug, and refactor.
+. The word SOLID acronym for:
+	|-> Single Responsibility Principle (SRP) -> The single responsibility principle states that every Java class must perform a single functionality.
+
+	|-> Open-Closed Principle(OCP) -> The open-closed principle states that according to new requirements the module should be open for extension but closed 							formodification.
+	|-> Liskov Substitution Principle (LSP) -> It applies to inheritance in such a way that the derived classes must be completely substitutable for their base classes.
+
+	|-> Interface Segregation Principle (ISP) -> The principle states that the larger interfaces split into smaller ones. Because the implementation classes use only 						     the methods that are required.
+	|-> Dependency Inversion Principle (DIP) -> The principle states that we must use abstraction (abstract classes and interfaces) instead of concrete implementations.
+
+
+
+* How function calls work.
+. while the function has not stopped executing it will remain in the stack.
+. when a function finishes execution it is removed from the stack and the flo3w of the program is restored to where it was called.
+. main function is the last function to be removed from the stack. (and first to be added.)
+https://www.youtube.com/watch?v=M2uO2nMT0Bk&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&index=23
+
+
+* Recursion
+. method calling itself.
+. if you are calling a function again and again you can treat as an separate call in the stack.
+. Base condition is the condition where our recursion will stop making new calls. (simole if condition.)
+. Helps in solving big/complex problems easily.
+. recursion tree is the flow of the mthd calls.
+. last function call is called tail recursion.
+
+
 * Array objects are in heap and heap objects are not continuous due to dynamic memory allocation. So in java it is not compulsory always that memory allocation done in continuous sequence it is depend on J.V.M.
+
+
 
 Arrays								  datatype ref.var.=object;
 . arrays are objects, can hold multiple values of same data type. int a[]={1,2,3}; or int a[] = new int[3]; a[0]=1;
@@ -70,9 +102,13 @@ Arrays								  datatype ref.var.=object;
 
 ** Command line arguments in java  (String[] args);
 
+
+
 == vs .equals. (== is a comparator)
 . == operator to check memory location or address of two objects are the same or not.
 . == checks if both objects point to the same memory location whereas .equals() evaluates to the comparison of values in the objects.
+
+
 
 String									   Datatype  ref.var. = object;		|  b |	--------(---	)    point to same object in string
 . String is a class in java. String s=new String("abc"); syso(s);		* String a = "Rana";		|  a | ---------( "Rana")    pool in heap memory.	
@@ -90,6 +126,9 @@ eg :- System.out.prinf("My name is %s and i am %s", "Abcd", "happy."); output ->
 . if printing an object it will call toString().
 . + operator works for primitives and in an expression atleat in eshould be an string (new ArrayList<>() + "" + new Integer(21)) output -> []21  //without string("") error.
 
+
+
+
 String s
 . s.split(regex) -split in array- if regex =" " , split after every space.
 . s.trim()  removes starting and ending spaces.
@@ -101,6 +140,8 @@ String s
 String, buffer, builder.
 . StringBuffer is a class in Java that represents a mutable sequence of characters. It provides an alternative to the immutable String class, allowing you to modify the contents of a string without creating a new object every time.
 StringBuffer is thread safe and StringBuilder is not.
+
+
 
 StringBuilder sb
 . sb.charAt
