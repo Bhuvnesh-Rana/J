@@ -369,7 +369,8 @@ Iterator<Integer>b = a.iterator();
 . output is not in sequence.
 . keys are set, values are list.
 . can use hashmap or hashtable, only difference is hashtable is synchronized.
-. comporator vs comparable.
+. comporator vs comparable. (used for sorting) can implement your own logic for sorting. Functional interfaces?? comparator is but comparable????
+ . Comparator has a method compare and comparable has a method compareTo.
 
 
 Stream
