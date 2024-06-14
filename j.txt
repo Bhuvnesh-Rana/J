@@ -345,7 +345,7 @@ Threads		(multiple things happening at the same time using multiple threads)(imp
 . class extending thread must have a run method. Then after object creation obj.start in the main mthd.
 . create obj of class extending thread class then to call mthd obj.start();
 . OS Schedular will schedule the proccess, it's job is which thread to execute.
-. thread.sleep (thread will go in waiting stage, 	in milliseconds), thead.setpriority. 
+. thread.sleep (thread will go in waiting stage, 	in milliseconds), thead.setpriority. to set priority.
 . if class wants to extend other class it cannot because multiple inheritance not suppported,so use runnable interface instead.
 	see desktop eg. impliment runnable.
 . can use lambda exp as runnable is functional interface

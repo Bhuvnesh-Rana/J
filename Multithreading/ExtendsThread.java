@@ -3,7 +3,7 @@ class A extends Thread{
     public void run(){
         for (int i = 0; i < 100; i++) {
             System.out.println("hi "+i);
-            try {
+            try {                               // can set priority.
                 Thread.sleep(80);       //machine fast, so printing thread at once hence using sleep().
             } catch (InterruptedException e) {
                 // TODO Auto-generated catch block
