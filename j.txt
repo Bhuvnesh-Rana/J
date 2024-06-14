@@ -347,7 +347,7 @@ Threads		(multiple things happening at the same time using multiple threads)(imp
 . OS Schedular will schedule the proccess, it's job is which thread to execute.
 . thread.sleep (thread will go in waiting stage, 	in milliseconds), thead.setpriority. to set priority.
 . if class wants to extend other class it cannot because multiple inheritance not suppported,so use runnable interface instead.
-	see desktop eg. impliment runnable.
+	see desktop eg. impliment runnable. * see code
 . can use lambda exp as runnable is functional interface
 
 
