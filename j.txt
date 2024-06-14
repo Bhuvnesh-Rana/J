@@ -320,12 +320,17 @@ Lambda exp
 . writing the type of variable is optional. (int a,int b)->{returna+b;}// can be written as (a,b)->a+b;
 
 Exceptions									|-> extends object
-. Error -compile time(syntax easy), run time, logical. 		Exception extends throwable ??impliments serializable??
+. Error -> compile time error(syntax easy), run time error, logical error. 		Exception extends throwable  impliments serializable
+. compile time errors - ide usually shows error, syntactical errors(eg typo) easy to solve.
+. logical errors - expected outcome is not coming.
+. run time errors - these are exceptions which stops the execution and need to be handeled.
 . execution stops when an exception occures.
+. Hirarchy => Object class -> Throwable calss -> 1) Error class and 2) Exception class.
+. Errors stop the execution -> caused by-Thread death, I/O error, VM error, Out of memory.	//cannot be handeled.
 . write critical statement in try block.	statement that can cause exception
 . try block will try to execute critical statement, if exception occures cath block will execute.
-. compiler throws object(exception), so - catch(excepion e);   excetion class.
-. catch block executed only if there is an excetion.
+. compiler throws object(exception), so - catch(Exception e);   Excetion class.(parent class)
+. catch block executed only if there is an exception.
 . write parent class exception in the last catch block.
 . runtime exp are unchecked(eg array index, dev by 0, null pt.) compile time are checked(sql,i/o). 
 . depends on user if they choose to handle the checked exception. compiler will force to handle unchecked exception.
