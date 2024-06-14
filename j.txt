@@ -349,6 +349,7 @@ Threads		(multiple things happening at the same time using multiple threads)(imp
 . if class wants to extend other class it cannot because multiple inheritance not suppported,so use runnable interface instead.
 	see desktop eg. impliment runnable. * see code
 . can use lambda exp as runnable is functional interface
+. Race condition -> two or more threads working on same variable or method.(Synchronized keyword, volatile keyword, atomic, transient.)
 
 
 Collections (uses wrapper class)// framework is set of classes and interface which provide ready made arch.
