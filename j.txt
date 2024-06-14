@@ -336,7 +336,10 @@ Exceptions									|-> extends object
 . finally will execute even if there is an exception or not.    // used to close resources. try-catch-finally, try-finally.
 . e.printStackTree
 
-Threads		(multiple things happening at the same time using multiple threads)(improve cpu utilization.)
+Threads		(multiple things happening at the same time using multiple threads)(improve cpu utilization.)*(threads are the smallest unit one can work with.)*
+. The concept of threads in Java was introduced to address the limitation of running only one task at a time. Threads allow a program to operate more efficiently by 	 
+  running multiple tasks simultaneously.
+. s/w -> runs on OS -> is on h/w where CPU does the processing(i.e. executes) and ram holds the memory temporarily for processing.
 . jvm will execute line by line, if want two process(or different mthd calls) to execute parallelly then use threads.
 . a class extends thread class or impliments runnable.(if implimented then obj.start() does not work,runnable does not have start mthd see img.)
 . class extending thread must have a run method. Then after object creation obj.start in the main mthd.
