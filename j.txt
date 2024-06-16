@@ -393,12 +393,14 @@ Iterator<Integer>b = a.iterator();
 
 . Map does not extend or implement collection interface. it is an interface of its own. part of collection api
 . map is collection of key and value pair. instead of index no. we use key. (to get value i.e. mapObject.get(key);)
-. in map key is distinctive and vaule can be repetitve.
+. in map key is distinctive and value can be repetitve.
 . output is not in sequence.
 . Use TreeMap if want sorted (sorted on the bases of keys.) 
 . keys are set, values are list.
+. Hashmap data stored in buckets(intially 16 index 0-15) in nodes(hash|key|value|address of next) as linkedlist.
+. index automatically increases after reaching 12.
 . can use hashmap or hashtable, only difference is hashtable is synchronized i.e thread safe, hash map can have 1 null key and mutiple null values
-  whereas hashtable cannot have null key or value. 
+  whereas hashtable cannot have null key or value. null key in hashmap will inserted in the 0 index of the bucket. 
 . can search element in O(1) time complexity using hash map. (Time complexity BST -> O(log n)) 
 . Hashing in Java is a technique for mapping data to a secret key that can be used as a unique identifier for data. It employs a function that 
   generates those keys from the data; this function is known as the Hash-function, and the output of this function (keys) is known as Hash-values.
@@ -406,6 +408,8 @@ Iterator<Integer>b = a.iterator();
 . given a key of strings hashcode changes it to a no. and hashing optimizes no. (hascode creates big no. and hashing reduces that no.)
 . separate chaining is best to handle collisions. 
 . collision saved by 1. chaining(linked list) 2. open addressing (Collision is when more than one key has same hash value)(while searching.)
+. if threshhold of linkedlist chaining is crossed(i.e complexity increasing) then bst is used instead.
+. suppose multiple keys(k) with same hascode(at index 4) then index 4 will contain k1 - k2 - k3 - k4 in same index using linkedlist.
 . comporator vs comparable. (used for sorting) can implement your own logic for sorting. Functional interfaces?? comparator is but comparable????
 . Comparator has a method compare and comparable has a method compareTo.
 . Comparator is from java.util and comparable is from java.lang package.
