@@ -392,12 +392,18 @@ Iterator<Integer>b = a.iterator();
         }
 
 . Map does not extend or implement collection interface. it is an interface of its own. part of collection api
-. map is collection of key and value pair. instead of index no. we use key. (to get i.e. mapObject.get(key);)
+. map is collection of key and value pair. instead of index no. we use key. (to get value i.e. mapObject.get(key);)
 . in map key is distinctive and vaule can be repetitve.
 . output is not in sequence.
-. Use TreeMap if want sorted (sorted on the bases od keys.) 
+. Use TreeMap if want sorted (sorted on the bases of keys.) 
 . keys are set, values are list.
 . can use hashmap or hashtable, only difference is hashtable is synchronized.
+. can search element in O(1) time complexity using hash map. (Time complexity BST -> O(log n)) 
+. Hashing in Java is a technique for mapping data to a secret key that can be used as a unique identifier for data. It employs a function that 
+  generates those keys from the data; this function is known as the Hash-function, and the output of this function (keys) is known as Hash-values.
+  Hashing is the practice of transforming a given key or string of characters into another value.
+. given a key of strings hashcode changes it to a no. and hashing optimizes no. (hascode creates big no. and hashing reduces that no.)
+. collision saved by 1. chaining 2. open addressing
 . comporator vs comparable. (used for sorting) can implement your own logic for sorting. Functional interfaces?? comparator is but comparable????
 . Comparator has a method compare and comparable has a method compareTo.
 . Comparator is from java.util and comparable is from java.lang package.
