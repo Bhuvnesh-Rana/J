@@ -397,13 +397,15 @@ Iterator<Integer>b = a.iterator();
 . output is not in sequence.
 . Use TreeMap if want sorted (sorted on the bases of keys.) 
 . keys are set, values are list.
-. can use hashmap or hashtable, only difference is hashtable is synchronized.
+. can use hashmap or hashtable, only difference is hashtable is synchronized i.e thread safe, hash map can have 1 null key and mutiple null values
+  whereas hashtable cannot have null key or value. 
 . can search element in O(1) time complexity using hash map. (Time complexity BST -> O(log n)) 
 . Hashing in Java is a technique for mapping data to a secret key that can be used as a unique identifier for data. It employs a function that 
   generates those keys from the data; this function is known as the Hash-function, and the output of this function (keys) is known as Hash-values.
   Hashing is the practice of transforming a given key or string of characters into another value.
 . given a key of strings hashcode changes it to a no. and hashing optimizes no. (hascode creates big no. and hashing reduces that no.)
-. collision saved by 1. chaining 2. open addressing
+. separate chaining is best to handle collisions. 
+. collision saved by 1. chaining(linked list) 2. open addressing (Collision is when more than one key has same hash value)(while searching.)
 . comporator vs comparable. (used for sorting) can implement your own logic for sorting. Functional interfaces?? comparator is but comparable????
 . Comparator has a method compare and comparable has a method compareTo.
 . Comparator is from java.util and comparable is from java.lang package.
