@@ -1,4 +1,5 @@
 ## J
+
 . Programming languages -> 1. Functional 2.Procedural 3.OOP
 . Static and Dynamic typed languages.
 . In Static Typing, type checking is performed during compile time. It means that the type of a variable is known at compile time.(java,C,C++)
