@@ -1,2 +1,2 @@
 # J
-Java Notes in j.
+Java core and advanced Notes in j.
