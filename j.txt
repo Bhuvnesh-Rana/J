@@ -7,7 +7,6 @@
 . java works on unicode languages supports every regional language.
 . instance var,obj-- in heap memory, local var,ref var-- in stack memory.
 . var in stack memory and each obj in heap memory with address. memory in jvm. main stack, new mthd dd- dd stack memory.
-. 
 
 
 . platform indipendent - run application on any machine irrespective of h/w or OS but machine must have jvm.
