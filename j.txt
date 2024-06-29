@@ -27,7 +27,7 @@
 
 . var is a reserved type name, detects variable data type automatically.
 
-. java is strongly typed lang.
+. java is strongly typed language.
 . In java there is no pass by referance, there is only pass by value.
 . Shadowing in java.
 . Declaration at compile time and initilisation at run time(i.e obj in heap) int a(at compile time)=10;(at run time) -> Dynamic memory allocation.
