@@ -357,7 +357,7 @@ Threads		(multiple things happening at the same time using multiple threads)(imp
 . can use lambda exp as runnable is functional interface.
 . threadobj.join -> waits for thread to die and the the other execution will run.
 . Race condition -> two or more threads working on same variable or method.(synchronized keyword, volatile keyword, atomic, transient.)
-. synchronized used for mthds. volatile used for variables.
+. synchronized used for mthds. volatile used for variables.	**Check something to do with main memory and cached memory..**
 
 * There may be a chance of data inconsistency problem to overcome this problem we should go for a synchronized keyword when multiple threads are
  trying to operate simultaneously on the same java object. If a method or block declares as synchronized then at a time only one thread at a time
