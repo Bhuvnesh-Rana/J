@@ -199,7 +199,7 @@ Constructors
 ..singleton class. class which can have only one global object.
 
 
-Anonymous obj
+Anonymous object
 . has no refrence var. // new ClassName(); will call const only, new ClassName().methodname(); will call mthd also, can't be used again.
 . has no name.
 
