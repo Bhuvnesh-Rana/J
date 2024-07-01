@@ -246,7 +246,7 @@ Final keyword
 
 Object class equals tostring hashcode
 . Object class is parent class of all the classes.
-. if we print ref, var it gives classname@hashcode i.e. it calls toString mthd from object class.
+. if we print object's ref var it gives classname@hashcode i.e. it calls toString mthd from object class.
 . can generate own toString and equals mthd with the help of IDE.
 . equals method compares referance by default if want to change logic then override the equals mthd.
 Up and down Casting - reference of parent obj of child down cast to create refrence of child.
