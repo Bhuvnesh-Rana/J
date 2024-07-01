@@ -276,7 +276,7 @@ abstarct class A{
 
 Inner Class (nested class)
 . class in a class
-. to call mthd and vrbl of inner class, create object obj of A then A.B obj1=obj.new B();      obj1.mthdname;
+. to call mthd and variable of inner class, create object obj of A then A.B obj1=obj.new B();      obj1.mthdname;
 . if inner class is static then A.B obj1=new A.B();
 . outer class cannot be static but inner class can be static. outer class can be public,abstract,final.
 . class name $ innercalss name.class
