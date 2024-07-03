@@ -171,7 +171,6 @@ Static		//no need to create obj of class to use the static variable, can be call
 	each object has its own value. obj.name="abc"; obj1.name="def"; 
 . can use non static var by passing the obj itself in the static method. (which obj value u want to show Classname.statmthd(obj1))
 
-kamal aujila.
 
 Encapsulation
 . binding of data with methods. getter setter. 
