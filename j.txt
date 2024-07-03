@@ -193,7 +193,7 @@ Constructors
 . same name as that of a class, has no return type.
 . Can give default values to variables. //otherwise default values are 0, null.
 . called when an obj is created. // default constuctor, parameterised const.
-. super()--execute the const of super class. john cena cant see it its there.(inheritance) create obj of subclass, constructor of super class will also be called.
+. ** super()--execute the const of super class. john cena cant see it its there.(inheritance) create obj of subclass, constructor of super class will also be called.
 . this()--execute the const of same class.
 ..singleton class. class which can have only one global object.
 
