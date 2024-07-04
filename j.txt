@@ -292,7 +292,7 @@ Interface 	//loose coupling
 . a class can impliment multiple interfaces at a time.
 . interface extends another interface.
 . to instantiate interface - impliment class make obj or inner class. 
-. funtional interface - has only 1 mthd    SAM- single abstract method
+. *funtional interface - has only 1 mthd    SAM- single abstract method
 . marker interface?? has no mthds/blank interface. used to update something to the compiler. eg. serializable, runnable
 . a game has checkpoint/savegame, this is serialization and when game starts again its deserialization.
 
