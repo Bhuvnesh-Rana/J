@@ -68,5 +68,19 @@ MVC stands for Model, View, and Controller. Spring MVC is a web MVC framework bu
 
 12. What is Bean Wiring?
 Bean wiring is a mechanism in Spring that is used to manage the dependencies between beans. It allows Spring to inject collaborating beans into each other. There are two types of Bean Wiring:
-. Autowiring
+. Autowiring(it is a fundamental annotation in Spring that enables automatic dependency injection.)
 . Manual wiring
+
+13. What is the difference between @Controller and @RestController in Spring Boot?.
+We can use the first annotation for traditional Spring controllers, and it has been part of the framework for a very long time.
+Spring 4.0 introduced the @RestController annotation in order to simplify the creation of RESTful web services. It’s a convenient annotation that combines @Controller and @ResponseBody, 
+which eliminates the need to annotate every request handling method of the controller class with the @ResponseBody annotation.
+@Controller Map of the model object to view or template and make it human readable but @RestController simply returns the object and object data is directly written in HTTP response as JSON or XML
+
+14. What is Spring Actuator? What are its advantages?
+An actuator is an additional feature of Spring that helps you to monitor and manage your application when you push it to production. These actuators include auditing, health, CPU usage, HTTP hits, 
+and metric gathering, and many more that are automatically applied to your application.
+
+15. What is a Spring Bean?
+In the Spring Framework, a Spring Bean is a fundamental concept that represents an object managed by the Spring Inversion of Control (IoC) container. A bean is created according to the specifications 
+provided in the configuration metadata supplied by the developer. This metadata can be supplied in XML, annotations, or Java-based configuration.
