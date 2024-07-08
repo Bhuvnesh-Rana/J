@@ -1,0 +1,72 @@
+1. What is Spring Boot?
+Spring Boot is built on the top of Spring framework to create stand-alone RESTful web application 
+with very minimal configuration and there is no need of external servers to run the application, 
+because it has embedded servers like Tomcat and Jetty etc.
+
+2. What are the Features of Spring Boot?
+. Auto-configuration – Spring Boot automatically configures dependencies by using @EnableAutoconfiguration annotation and reduces boilerplate code.
+. Spring Boot Starter POM – These Starter POMs are pre-configured dependencies for functions like database, security, maven configuration etc.
+. Spring Boot CLI (Command Line Interface) – This command line tool is generally for managing dependencies, creating projects and running the applications.
+. Actuator – Spring Boot Actuator provides health check, metrics and monitors the endpoints of the application. It also simplifies the troubleshooting management.
+. Embedded Servers – Spring Boot contains embedded servers like Tomcat and Jetty for quick application run. No need of external servers.
+
+3. What are the Spring Boot Starter Dependencies?
+. Data JPA starter
+. Web starter
+. Security starter
+. Test Starter
+. Thymeleaf starter
+
+4. How does a spring application get started?
+A Spring application gets started by calling the main() method with @SpringBootApplication annotation in the SpringApplication class. This method 
+takes a SpringApplicationBuilder object as a parameter, which is used to configure the application.
+Once the SpringApplication object is created, the run() method is called.
+Once the application context is initialized, the run() method starts the application’s embedded web server.
+
+5. What does the @SpringBootApplication annotation do internally?
+The @SpringBootApplication annotation combines three annotations. Those three annotations are: @Configuration, @EnableAutoConfiguration, and @ComponentScan.
+. @AutoConfiguration: This annotation automatically configuring beans in the class path and automatically scans the dependencies according to the application need.
+. @ComponentScan: This annotation scans the components (@Component, @Service, etc.) in the package of annotated class and its sub-packages.
+. @Configuration: This annotation configures the beans and packages in the class path.
+@SpringBootApplication automatically configures the application based on the dependencies added during project creation and bootstraps the application by using run() 
+method inside the main class of an application.
+
+@SpringBootApplication = @Configuration + @EnableAutoConfiguration + @ComponentScan
+
+6. What are Spring Boot CLI and the most used CLI commands?
+Spring Boot CLI is a command-line tool that can be used to create, run, and manage Spring Boot applications. It is a powerful tool that can help us to get started with 
+Spring Boot quickly and easily. It is built on top of the Groovy programming language.
+Most used CLI commands are:
+-run,-test,-jar,-war,–init,-help.
+
+7. What are the basic Spring Boot Annotations?
+. @SpringBootApplication: This is the main annotation used to bootstrap a Spring Boot application. It combines three annotations: @Configuration, @EnableAutoConfiguration, 
+  and @ComponentScan. It is typically placed on the main class of the application.
+. @Configuration: This annotation is used to indicate that a class contains configuration methods for the application context. It is typically used in combination with @Bean 
+  annotations to define beans and their dependencies.
+. @Component: This annotation is the most generic annotation for any Spring-managed component. It is used to mark a class as a Spring bean that will be managed by the Spring container.
+. @RestController: This annotation is used to define a RESTful web service controller. It is a specialized version of the @Controller annotation that includes the @ResponseBody annotation by default.
+. @RequestMapping: This annotation is used to map HTTP requests to a specific method in a controller. It can be applied at the class level to define a base URL for all methods in the class, 
+  or at the method level to specify a specific URL mapping.
+
+8. Can we disable the default web server in the Spring Boot application?
+Yes, we can disable the default web server in the Spring Boot application. To do this, we need to set the server.port property to “-1” in the application’s application.properties file.
+
+9. What is dependency Injection and its types?
+Dependency Injection (DI) is a design pattern that enables us to produce loosely coupled components. In DI, an object’s ability to complete a task depends on another object. There three types of dependency Injections.
+
+. Constructor injection: This is the most common type of DI in Spring Boot. In constructor injection, the dependency object is injected into the dependent object’s constructor.
+. Setter injection: In setter injection, the dependency object is injected into the dependent object’s setter method.
+. Field injection: In field injection, the dependency object is injected into the dependent object’s field.
+
+10. What is an IOC container?
+An IoC (Inversion of Control) Container in Spring Boot is essentially a central manager for the application objects that controls the creation, configuration, and management of dependency injection of objects 
+(often referred to as beans), also referred to as a DI (Dependency Injection) container.
+
+11. Explain Spring MVC
+MVC stands for Model, View, and Controller. Spring MVC is a web MVC framework built on top of the Spring Framework. It provides a comprehensive programming model for building web applications.
+
+12. What is Bean Wiring?
+Bean wiring is a mechanism in Spring that is used to manage the dependencies between beans. It allows Spring to inject collaborating beans into each other. There are two types of Bean Wiring:
+. Autowiring
+. Manual wiring
