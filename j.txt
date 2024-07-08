@@ -30,6 +30,8 @@
 . java is strongly typed language.
 . In java there is no pass by referance, there is only pass by value.
 . Shadowing in java.
+. Shadowing in Java is the practice of using variables in overlapping scopes with the same name where the variable in low-level scope overrides the variable of high-level 
+  scope.
 . Declaration at compile time and initilisation at run time(i.e obj in heap) int a(at compile time)=10;(at run time) -> Dynamic memory allocation.
 
 . Enhanced for loop for arrays.
