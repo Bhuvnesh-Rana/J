@@ -41,7 +41,7 @@
 . public -> accessible everywhere in the project.
   private -> accessible in the same class, no one from outside world can access the data directly.
   default -> accessible in the same package.//i.e acc in same class, package subclass, package non-subclass.
-  protected -> acc in same package and subclass of diff package.// acc in same class, package subclass, package non-subclass, diff package subclass.
+  protected -> accessible in same package and subclass of diff package.// accessible in same class, package subclass, package non-subclass, diff package subclass.
 
 . class public, instance var private, mthd public. rest requirement based. avoid default.
 . varargs ambiguity while mthd overloading. //compiler cannot decide which mthd to call.
