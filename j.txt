@@ -215,6 +215,7 @@ Inheritance
 Method Overriding
 . same name method in subclass can override method in the parent class.
 . private, static, final methods cannot be overriden. (static -> method hiding, hides superclass mthd.)
+. Like C++, when a function is static(parent), runtime polymorphism doesn\'t happen.
 
 packages
 . import class which is in different package.
