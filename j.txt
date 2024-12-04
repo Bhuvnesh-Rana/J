@@ -14,7 +14,7 @@
 			jvm looks for the main method to start the execution.(execution starts from the main method.)
 . Programmer writes Java code(Source code .java file), which is compiled(using javac compiler) to Byte code(.class file) which is understood by the JVM.
 
-. To run the code javac Hello.java then java Hello OR can simply do in one step java Hellow.java
+. To run the code javac Hello.java then java Hello OR can simply do in one step java Hello.java
 . h/w->os->jdk(->jre(->jvm))
 . code will run on jvm, jre has required libs to run the code.(inbuilt libs classes used in the code.) also validate the byte code, class loader.
 . Compile code with jdk and run on jvm. jre has necessary lib,fles, class req to run byte code
