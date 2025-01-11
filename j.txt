@@ -1,5 +1,6 @@
 ## J
 
+https://www.youtube.com/watch?v=BGTx91t8q50
 . Programming languages -> 1. Functional 2.Procedural 3.OOP
 . Static and Dynamic typed languages.
 . In Static Typing, type checking is performed during compile time. It means that the type of a variable is known at compile time.(java,C,C++)
@@ -100,7 +101,7 @@ Arrays								  datatype ref.var.=object;
 		a[2]=new int[4];						Sysoln("");}
 . drawback size fixed, will traverse the array to find element time consuming.
 . Array of objects. Student stud[] = new Student[3];			Student s1=new Student();
-			stud[0]=s1(ref var of Student)			s1.rollno=3;
+			stud[0]=s1  (ref var of Student)		s1.rollno=3;
 . In ArrayList initially size is fixed but when limit reaches, it copies the elements to new list with increased size and deletes the prev. list.
 
 ** Command line arguments in java  (String[] args);
@@ -120,7 +121,7 @@ String									   Datatype  ref.var. = object;		|  b |	--------(---	)    point t
 . If 2 strings have same content(value) they get same address in string constant pool. strings are immutable. 			
 . String pool is separate memory structure in the heap memory(created for optimisation) if n no. of ref var have same value, they point to one obj.
 . If we change something in the existing string, it creates new constant.
-. Can create diffrent string objects with same value using 'new' explicitly. The object will be created in the heap memory outside string pool.
+. Can create different string objects with same value using 'new' explicitly. The object will be created in the heap memory outside string pool.
 e.g.    String a="ab"; address 101  constant, immutable
 	a=a+"cd";	address 102
 Syso()		println -> is of type printStream -> has mthd valueOf -> which uses toString.	****//CHECK.
@@ -172,15 +173,16 @@ Static		//no need to create obj of class to use the static variable, can be call
 . static block call---> then const.(if no obj creation then class don't load, then to call static block Class.forName(className))
 . cannot access non static var in a static method but can access static var in static method and non static mthd.
 	each object has its own value. obj.name="abc"; obj1.name="def"; 
-. can use non static var by passing the obj itself in the static method. (which obj value u want to show Classname.statmthd(obj1))
+. can use non static var in a static mthd by passing the obj itself in the static method. (which obj value u want to show Classname.statmthd(obj1))
+. cannot access non static variables in a static mtd.
 
 
 Encapsulation
-. binding of data with methods. getter setter. 
+. binding of data with methods. getter setter. create instance variables as private an use get set mthds.
 
 
 This Keyword
-. The this keyword refers to the current object in a method or constructor which is callig the mthd.
+. The this keyword refers to the current object in a method or constructor which is callig the mthd. eg in main mthd class A i am calling a mthd from other class B.(both instance and local variable have same name.)
 
 public void setName(String name){
 		this.name=name;}
@@ -197,7 +199,28 @@ Constructors
 . Can give default values to variables. //otherwise default values are 0, null.
 . called when an obj is created. // default constuctor, parameterised const.
 . ** super()--execute the const of super class. john cena cant see it its there.(inheritance) create obj of subclass, constructor of super class will also be called.
-. this()--execute the const of same class.
+. if using super(), then default constructor will be called of parent/super class. if want to call other constructor than the default then add parameter to super mthd.(i.e match the signature with paramterized const in super class) 
+. this()--execute the const of same class and super()--executes the const of super class. if parameters are empty then default const will be called.
+
+class A
+{
+	  public A()
+	{	Syso("in default A const");	}
+	  public A(int i)
+	{	Syso("in param A const";	}
+}
+class B extends A
+{
+	  public B()
+	{	Syso("in default B const");	}	//super is automatically there.
+	  public B(int i)
+	{	Syso("in param B const";	}
+}
+in main mthd	{
+B obj = new B();	//output -> in default A const  (then) in defaukt const B
+
+for more watch https://www.youtube.com/watch?v=BGTx91t8q50
+
 ..singleton class. class which can have only one global object.
 
 
@@ -209,12 +232,12 @@ Anonymous object
 Inheritance
 . single level multi level inheritance // parent/super/base class  child/sub/derived class
 . java does not support multiple inheritance //ambiguity
-. when we create a Child class object and call the function a(), the compiler gets confused about whether to call the a() method of Parent1 or Parent2. This is the ambiguity problem faced by the compiler hence multiple inheritance is not supported in Java.
+. when we create a Child class object and call the method a() which is present in both parent1 and parent2, the compiler gets confused about whether to call the a() method of Parent1 or Parent2. This is the ambiguity problem faced by the compiler hence multiple inheritance is not supported in Java.
 . every class which does not extends, extends the Object class by default
 
 
 Method Overriding
-. same name method in subclass can override method in the parent class.
+. same name method in subclass can override method in the parent class. if want other mthd of parent class but not want implementation of mthd eg a() and want diff implementation for it then declare that mthd in child class and create the obj of child class. this will override the a() mthd and other required mthds of parent class can be used.
 . private, static, final methods cannot be overriden. (static -> method hiding, hides superclass mthd.)
 . Like C++, when a function is static(parent), runtime polymorphism doesn\'t happen.
 
@@ -229,7 +252,7 @@ Polymorhism (many forms/behaviour)
 
 
 WRAPPER class (to make entirely object oriented)
-. java is not entirely Object oriented. because of primitive data types don't extend obj class.
+. java is not entirely Object oriented. because of primitive data types don't extend Object class.
 . for every primitive type we have a class which is used in certain frameworks.
 . storing primitive variable in wrapper class object is called autoboxing. int a=4; Integer b=a;	//Autoboxing.
 . integer b=a; int c =b; //auto-unboxing  or int c= b.intValue(); //unboxing.
