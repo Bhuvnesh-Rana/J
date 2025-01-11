@@ -5,8 +5,9 @@
 . In Static Typing, type checking is performed during compile time. It means that the type of a variable is known at compile time.(java,C,C++)
 . In Dynamic Typing, type checking is performed at runtime. For example, Python is a dynamically typed language. It means that the type of a variable is allowed to change over its lifetime.(python, php, js, Ruby).
 . java works on unicode languages supports every regional language.
+. instance variable is defined in class and can be accessed through out the class and local variable is defined in mthd.
 . instance var,obj-- in heap memory, local var,ref var-- in stack memory.
-. var in stack memory and each obj in heap memory with address. memory in jvm. main stack, new mthd dd- dd stack memory.
+. var in stack memory and each obj in heap memory with address. memory in jvm. main stack, new mthd abc- abc stack memory. Each mthd will have it's own stack in the jvm.
 
 
 . platform indipendent - run application on any machine irrespective of h/w or OS but machine must have jvm.
