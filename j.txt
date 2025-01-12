@@ -88,7 +88,9 @@ https://www.youtube.com/watch?v=M2uO2nMT0Bk&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAy
 
 * Array objects are in heap and heap objects are not continuous due to dynamic memory allocation. So in java it is not compulsory always that memory allocation done in continuous sequence it is depend on J.V.M.
 
-
+Switch
+. switch supports int, char, byte, short, and String (Java 7+).
+. It does not support long, float, double, boolean, or general objects.
 
 Arrays								  datatype ref.var.=object;
 . arrays are objects, can hold multiple values of same data type. int a[]={1,2,3}; or int a[] = new int[3]; a[0]=1;
@@ -302,7 +304,7 @@ abstarct class A{
 
 Inner Class (nested class)
 . class in a class
-. to call mthd and variable of inner class, create object obj of A then A.B obj1=obj.new B();      obj1.mthdname;
+. to call mthd and variable of inner class, create object obj of A then A.B obj1=obj.new B();      obj1.mthdname; 	//need object of outer class to create object of inner class.
 . if inner class is static then A.B obj1=new A.B();
 . outer class cannot be static but inner class can be static. outer class can be public,abstract,final.
 . class name $ innercalss name.class
@@ -320,15 +322,18 @@ Interface 	//loose coupling
 . interface extends another interface.
 . to instantiate interface - impliment class make obj or inner class. 
 . *funtional interface - has only 1 mthd    SAM- single abstract method
-. marker interface?? has no mthds/blank interface. used to update something to the compiler. eg. serializable, runnable
+. marker interface?? has no mthds/blank interface. used to update something to the compiler. eg. serializable, runnable  (in serialization can store values of an object in hardrive.)
 . a game has checkpoint/savegame, this is serialization and when game starts again its deserialization.
 
 
 
-enum(gfg) see eg. (named constants )
-. enum extends enum class.		enum Status{
-. enum constants are objs.			Running,Failed,Success;}
-. can't inherit or extend. 			Status s = Status.Success; 	syso(s);
+enum(gfg) see eg. (named constants )	//Like in http status 200 OK is a status
+. enum extends enum class.				enum Status{
+. enum constants are objectss. eg. 	----->	---->	   Running,Failed,Success;}
+. can't inherit or extend. 				Status s = Status.Success; 	//in main class
+. using switch makes more sense for enums.		   syso(s);			//will print Success.
+. enum name.value give array of all constants.		eg. Status.values
+. can use private constructors. 	see vid eg....
 
 bug is logical issue
 annotations give extra info to compiler
@@ -340,10 +345,11 @@ Lambda exp
 . func interface can be implemented 1.using a class which implements the FI and then creating obj of class to use mthd.//FI f1=new ClassimplenFI
 				    2.by creating anon inner class of FI. // FI f1=new FI(){FI mthd(){code}}
 				    3.by using Lambda func. FI f1 = ()->code;
-. used to decrease the line of code.
+. used to decrease the lines of code.
 . has no name, modifeir, return type.
-. if the body of lambda exp. has only one line then curly braces are optional. retrn is optional; compiler intelligent.
+. if the body of lambda exp. has only one line then curly braces are optional. return is optional if that is the only piece of code; compiler intelligent.
 . writing the type of variable is optional. (int a,int b)->{returna+b;}// can be written as (a,b)->a+b;
+. does not create seperate anon.class file after compiling if usiing Lambda exp.
 
 Exceptions									|-> extends object
 . Error -> compile time error(syntax easy), run time error, logical error. 		Exception extends throwable  impliments serializable
