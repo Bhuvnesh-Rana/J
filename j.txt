@@ -387,7 +387,7 @@ Threads		(multiple things happening at the same time using multiple threads)(imp
 . if class wants to extend other class it cannot because multiple inheritance not suppported,so use runnable interface instead.
 	see desktop eg. impliment runnable. * see code
 . can use lambda exp as runnable is functional interface.
-. threadobj.join -> waits for thread to die and the the other execution will run.
+. threadobj.join -> waits for thread to die(complete it' execution) and then the other execution will run.
 . Race condition -> two or more threads working on same variable or method.(synchronized keyword, volatile keyword, atomic, transient.)
 . synchronized used for mthds. volatile used for variables.	**Check something to do with main memory and cached memory..**
 
