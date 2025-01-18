@@ -404,6 +404,9 @@ Threads		(multiple things happening at the same time using multiple threads)(imp
  . Thread states -> New -> Runnable -> Running -> Waiting ------> runnable -> CYCLE_REPEAT.
 					  start()     run()  sleep(),wait()		notifiy()
 
+. User Thread- JVM wait until user threads to finish their work. It never exit until all user threads finish their work. all threads by default user thread as daemonThread.setDaemon(false) by default.
+. Daemon Thread- The JVM will not wait for daemon threads to finish their work. The JVM will exit as soon as all user threads finish their work. to make a thread daemon thread .setDaemon(true). Daemon thread is a thread that runs in the background and is designed to provide services or perform tasks like garbage collection, event handling.
+
 					  
 
 Collections (uses wrapper class)// framework is set of classes and interface which provide ready made arch.
@@ -411,7 +414,7 @@ Collections (uses wrapper class)// framework is set of classes and interface whi
 . Collection a = new ArrayList(); //Collection interface, Arraylist implimets List interface which extends Collection interface. a.add.           (but is immutable)
 . List<Integer> a = new ArrayList<Integer>();
 . a.add(1); 		  or can use List<Integer> b = List.of(1,2,3); instead of first defining and the using .add();.
-. List supports repetitive values. has a get mthd for the index no. *Set is not indexed so no get mthd.
+. List takes input in sequence and supports repetitive values. has a get mthd for the index no. *Set is not indexed so no get mthd.
 . Collection/Set<Integer> a = new HashSet<Integer>();
 . Set will not give the repetitive value. output is not in sequence. does not have get mthd for index no.
 . if want sorted output use TreeSet instead of HashSet. Set->HashSet->LinkedHashSet(output in sequence.) or...
@@ -465,6 +468,26 @@ Stream
 . stream can be applied on collections as well as on grp of objects(eg. Arrays.stream())
 . mthds filter(predicator), map, foreach etc...
 . can be used only once.
+
+
+
+@Value- used for injecting values into fields, methods, or constructor parameters. It is part of Spring's dependency injection (DI) mechanism and allows you to inject values from properties files, environment variables, or other sources directly into your Spring-managed beans.
+
+Spring-managed beans are at the heart of Spring’s IoC container. They are objects that Spring manages throughout their lifecycle, including instantiation, dependency injection, and destruction. By using Spring-managed beans, you can achieve loose coupling, improved modularity, and greater flexibility in your applications.
+Annotation-based Configuration 
+    @Component: A generic annotation for any Spring bean.
+    @Service: A specialization of @Component, typically used for service layer beans.
+    @Repository: A specialization of @Component, used for DAO (data access) layer beans.
+    @Controller: A specialization of @Component, used for Spring MVC controllers.
+
+You don't manually create the object using new in your code. Instead, you declare the bean, and Spring takes care of its creation, configuration, and dependencies.
+@Bean-  The @Bean annotation tells Spring that the method will return an object that should be managed as a Spring bean and that Spring should take care of creating and managing the lifecycle of that object. The @Bean annotation is typically used within a @Configuration class.
+
+volatile
+transient
+synchronized
+@Builder
+
  
 
 
