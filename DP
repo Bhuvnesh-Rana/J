@@ -1,0 +1,37 @@
+Design patterns are reusable solutions to common problems in software design to build applications. They are proven approaches that have been refined over time and help make code more flexible, maintainable, and scalable.
+
+How are design patterns different from algorithms?
+Both Design Patterns and Algorithms describe typical solutions to any given problem. But the main difference is that the algorithm defines a clear set of actions for achieving a goal and a design pattern provides
+a high-level description of any solution.
+
+1. Creational Patterns – Deal with object creation mechanisms, trying to create objects in a manner suitable to the situation and that is independent of the system's environment.
+
+a) Singleton Pattern
+Ensures a class has only one instance and provides a global point of access to it. Often used for logging, database connections, etc.
+The class must ensure that only a single instance is created and a single object can be used by all other classes.
+
+public class Singleton {
+    private static Singleton instance;
+    
+    private Singleton() {}  // private constructor to prevent instantiation
+    
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+}
+
+b) Factory Design Pattern
+Define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate.
+
+
+
+
+2. Structural Patterns – Deals with organizing classes and objects to form larger structures, while keeping them flexible and efficient.
+a) Facade Pattern
+b) Adapter Pattern
+
+3. Behavioral Patterns – Concerned with the interaction and responsibility between objects.
+
