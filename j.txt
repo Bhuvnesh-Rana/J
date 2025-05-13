@@ -306,7 +306,7 @@ Inner Class (nested class)
 . class in a class
 . to call mthd and variable of inner class, create object obj of A then A.B obj1=obj.new B();      obj1.mthdname; 	//need object of outer class to create object of inner class.
 . if inner class is static then A.B obj1=new A.B();
-. outer class cannot be static but inner class can be static. outer class can be public,abstract,final.
+. outer class cannot be static but inner class can be static. outer class can be public,abstract,final.			//can have only one public class per file. **
 . class name $ innercalss name.class
 ... anonymous inner class.		// class name $ 1.class  (class name is in which anon inner class is defined while creating obj.)
 ... abstract and anonymous inner class.  instead of making new class to define abs mthd define in anon inner class.
