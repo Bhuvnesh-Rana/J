@@ -46,7 +46,7 @@ https://www.youtube.com/watch?v=BGTx91t8q50
   protected -> accessible in same package and subclass of diff package.// accessible in same class, package subclass, package non-subclass, diff package subclass.
 
 . class public, instance var private, mthd public. rest requirement based. avoid default.
-. varargs ambiguity while mthd overloading. //compiler cannot decide which mthd to call.
+. varargs ambiguity while mthd overloading. //compiler cannot decide which mthd to call.		public void Name(String... n){for(String i:n){Syso(i + " ");}}
 
 Method overloading
 . same mthd name different parameters. either parameter length or type should be different. 
