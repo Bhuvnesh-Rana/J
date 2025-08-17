@@ -469,7 +469,23 @@ Stream
 . mthds filter(predicator), map, foreach etc...
 . can be used only once.
 
+. ArrayList vs LinkedList (image in this repo.)
+Both implement the List interface
 
+Use ArrayList when:
+You need fast random access.
+Insertions/removals are mostly at the end.
+Memory usage is a concern.
+
+Use LinkedList when:
+You have lots of insertions/deletions in the middle/start.
+You don't need fast random access.
+You’re using iterators for modification.
+
+. Optional -> is a container object used to represent the presence or absence of a value. It was introduced in Java 8 to help avoid NullPointerException and make code more expressive and safer.
+
+. Java 8 features:															|-> list.foreach(System.out::println) instead of list.forEach(s -> System.out.println(s));
+ Lambda exp, Functional interface, Stream API, Default mthd in interfces, mthd references, OPtional class, Date Time API, Collectors.
 
 @Value- used for injecting values into fields, methods, or constructor parameters. It is part of Spring's dependency injection (DI) mechanism and allows you to inject values from properties files, environment variables, or other sources directly into your Spring-managed beans.
 
@@ -493,3 +509,4 @@ synchronized
 
 regex
  
+
