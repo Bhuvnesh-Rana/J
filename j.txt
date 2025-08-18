@@ -499,14 +499,17 @@ Annotation-based Configuration
 You don't manually create the object using new in your code. Instead, you declare the bean, and Spring takes care of its creation, configuration, and dependencies.
 @Bean-  The @Bean annotation tells Spring that the method will return an object that should be managed as a Spring bean and that Spring should take care of creating and managing the lifecycle of that object. The @Bean annotation is typically used within a @Configuration class.
 
-volatile
-transient
-synchronized
-@Builder
+. volatile- keyword is used to indicate that a variable's value will be modified by multiple threads. It ensures that changes made to the variable in one thread are immediately visible to other threads, preventing the thread-local cache issues and ensuring proper synchronization in a multi-threaded environment.
+. transient- keyword ensures that a field is not serialized, making it useful for sensitive or temporary data. pswd and all
+. synchronized
+
+@Builder - The @Builder annotation from Lombok generates a builder class at compile time, with methods to set the values of the object’s fields. This way, you don’t need to manually implement the builder pattern yourself.
+The Builder pattern is a design pattern that allows you to construct a complex object step by step, instead of having to call a constructor with a lot of parameters. It's commonly used for classes that have a lot of optional parameters or configurations, making the code more readable and maintainable.
 
  
 
 
 regex
  
+
 
