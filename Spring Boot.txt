@@ -84,3 +84,17 @@ and metric gathering, and many more that are automatically applied to your appli
 15. What is a Spring Bean?
 In the Spring Framework, a Spring Bean is a fundamental concept that represents an object managed by the Spring Inversion of Control (IoC) container. A bean is created according to the specifications 
 provided in the configuration metadata supplied by the developer. This metadata can be supplied in XML, annotations, or Java-based configuration.
+
+16. How to exclude a class from auto cinfiguration?
+@SpringBootApplication(exclude ={.class, .class}) OR can exclude from application.properties spring.autoconfiguration.exclude= FULL PACKAGE NAME WITH CLASS NAME.
+
+17. Difference b/w constructor injection and setter injection
+CI is immutable SI is mutable
+CI circular dependency cant be resolved, SI Circular dependency can be resolved using @Lazy (@Lazy can be used in CI also) in SI first bean is created so used to remove circu dep.
+CI mandatory Dependency injection SI optional DI.
+
+18. What is purpose of @PostConstruct ?
+If want to run a piece of code during application startup i.e. pre-processing logic can be done using this. can also be done using CommandLineRunner interface.
+
+19. What is Purpose of @Qualifier ?
+It is used with @Autowired, in spring framework it is used to resolve the ambiguity when multiple beans of the same type are available in the application context. @Qualifier(" bean name")
